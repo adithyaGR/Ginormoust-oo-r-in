@@ -1,0 +1,33 @@
+from turing import TuringMachine
+
+# Create a new Turing machine
+machine = TuringMachine()
+
+# Read machine definition from Input.txt. If not successful, print error message
+# and quit with error code -1
+if not machine.read_machine("Input.txt"):
+    print("Error reading Input.txt!")
+    exit(-1)
+
+# Execute the Turing machine and keep the resulting list of tape contents
+result = machine.execute()
+
+# machine.execute() returns None in a case of error. If this is the case, print
+# error message and quit with error code -1
+if result is None:
+    print("Error while executing Turing machine!")
+    exit(-1)
+
+# If everything was fine, print to the standard output the last tape content
+# (at the point we reached halt state). It's simply the last element of our
+# result list
+print result[len(result) - 1]
+
+
+# Finally, write the resulting list of tape contents to Output.txt
+# Write each element of the list in a new line
+with open("Output.txt", "w") as f:
+    for r in result:
+        f.write(r + "\n")
+
+exit(0)
