@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-# TuringMachine class represents our Turing machined
+# TuringMachine class represents our Turing machinedd
 
 
 class TuringMachine:
