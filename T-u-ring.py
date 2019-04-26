@@ -29,7 +29,7 @@ class TuringMachine:
             self.turing_machine = turing_machine
             self.write = write
             self.direction = direction
-            self.new_state = new_state
+            //self.new_state = new_state
 
         # This method implements the procedure that takes place when the action
         # is taken. As the definition of Turing machine describes, action
