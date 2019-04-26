@@ -1,5 +1,5 @@
 from collections import defaultdict
-...
+....
 # TuringMachine class represents our Turing machine
 
 
