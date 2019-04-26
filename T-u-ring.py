@@ -1,6 +1,6 @@
 from collections import defaultdict
 ....
-# TuringMachine class represents our Turing machine;;;;
+# TuringMachine class represents our Turing machine;;;;;;;
 
 
 class TuringMachine:
